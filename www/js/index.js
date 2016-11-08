@@ -1,16 +1,16 @@
-<!-- For more info on jQuery Mobile,  touch gestures and other useful events see : http://api.jquerymobile.com/category/events/ -->
+// For more info on jQuery Mobile,  touch gestures and other useful events see : http://api.jquerymobile.com/category/events/
 
-$(document).on("pagecreate","#pageone",function(){
+$(document).on("pagecreate", "#pageone", function() {
   
-  	$('#tapholdtext').on("taphold",function(){
+  	$('#tapholdtext').on("taphold", function() {
     	$(this).hide();
  	});                       
 
-	$('#taptext').on("tap",function(){
-    	alert("Stop tapping!");
- 	}); 
+	$('#taptext').on("tap", function() {
+    	$(this).css('color', 'blue');
+    }); 
 
-	$('#swipetext').on("swipeleft",function(){
+	$('#swipetext').on("swipeleft", function() {
     	$(this).css('color', 'green');
   	});   
 
